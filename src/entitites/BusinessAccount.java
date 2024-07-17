@@ -27,6 +27,12 @@ public class BusinessAccount extends Account {
 		}
 	}
 	
+	@Override
+	public void withdraw(Double amount) {
+		super.withdraw(amount);
+		balance -= 2.0;
+	}
+	
 	public String toString() {
 		return "Number: " + number + "\n" +
 				"Holder: " + holder + "\n" +

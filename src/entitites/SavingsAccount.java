@@ -24,7 +24,11 @@ public class SavingsAccount extends Account{
 	}
 	
 	@Override
+	public void withdraw(Double amount) {
+		balance -= amount;
+	}
 	
+	@Override
 	public String toString() {
 		return "Number: " + number + "\n" +
 				"Holder: " + holder + "\n" +
